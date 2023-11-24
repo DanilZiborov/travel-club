@@ -15,7 +15,8 @@ export class TourCard extends Card {
     this._card.querySelector('.tour-card__duration').textContent = this._cardData.duration;
     this._card.querySelector('.tour-card__about').textContent = this._cardData.about;
 
-    if (this._cardData.index % 3 === 0) {
+    if (this._cardData.index % 3 === 0 && document.documentElement.clientWidth > 768) {
+      console.log(document.documentElement.clientWidth);
       this._card.classList.add('tour-card_big');
       this._card.querySelector('.tour-card__title').classList.add('tour-card__title_big');
       this._card.querySelector('.tour-card__duration').classList.add('tour-card__duration_big');

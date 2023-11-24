@@ -31,8 +31,6 @@
   }
 }
 
-
-
 .social-icon {
 }
 
@@ -64,7 +62,6 @@
 }
 
 
-
 .social-icon_place_lead-form {
   width: 50px;
   height: 50px;
@@ -81,6 +78,13 @@
   .social-icon_place_lead-form  {
     width: 35px;
     height: 35px;
+  }
+}
+
+@media (max-width: 768px) {
+  .social-icon_place_lead-form  {
+    width: 30px;
+    height: 30px;
   }
 }
 

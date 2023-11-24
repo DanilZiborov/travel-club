@@ -25,6 +25,8 @@
 @media (max-width: 768px) {
   .team__grid {
     grid-template-columns: 1fr;
+    gap: 30px;
+    padding: 0 30px;
   }
 }
 
@@ -52,6 +54,8 @@ letter-spacing: 1px;
 
 @media (max-width: 768px) {
   .team__title {
+    font-size: 26px;
+    margin-bottom: 30px;
     grid-column: auto;
     grid-row: auto;
   }
@@ -62,13 +66,16 @@ letter-spacing: 1px;
   margin: 0;
   grid-column: 1 / 1;
   grid-row: 2 / 4;
-  width: 80%;
+  max-width: 80%;
 }
 
 @media (max-width: 768px) {
   .team__about-wrapper {
+    max-width: 90%;
+    padding: 0;
     grid-column: auto;
     grid-row: auto;
+    margin-bottom: 50px;
   }
 }
 
@@ -90,6 +97,16 @@ letter-spacing: 1px;
   .team__about {
     font-size: 21px;
     line-height: 1.5;
+  }
+}
+
+@media (max-width: 768px) {
+  .team__about {
+    font-size: 18px;
+    line-height: 1.5;
+    text-align: start;
+    margin-bottom: 3%;
+
   }
 }
 
@@ -132,6 +149,13 @@ letter-spacing: 1px;
   }
 }
 
+@media (max-width: 768px) {
+  .team-card__photo{
+    width: 60px;
+    height: 60px;
+  }
+}
+
 .team-card__name {
   margin: 0;
   font-size: 26px;
@@ -149,6 +173,13 @@ letter-spacing: 1px;
     font-size: 22px;
   }
 }
+
+@media (max-width: 768px) {
+  .team-card__name{
+    font-size: 18px;
+  }
+}
+
 
 .team-card__name::first-letter {
   color: #FFA343;
@@ -174,6 +205,12 @@ letter-spacing: 1px;
 @media (max-width: 1280px) {
   .team-card__about{
     margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .team-card__about{
+    margin-bottom: 15px;
   }
 }
 
