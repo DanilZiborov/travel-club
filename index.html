@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="src/style/index.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Турклуб</title>
+</head>
+
+<body class="root">
+  <div class="page">
+    <header class="header">
+      <img class="logo logo_place_header" src="src/images/logo_theme_dark.png" alt="">
+      <nav class="header__navbar">
+
+        <a href="" class="header__navlink">Путешествия</a>
+        <a href="" class="header__navlink">Команда</a>
+        <a href="" class="header__navlink">Отзывы</a>
+        <a href="" class="header__navlink"> FAQ</a>
+        <a href="" class="header__navlink"> Контакты</a>
+
+      </nav>
+      <ul class="header__social">
+        <li>
+          <p class="header__number">+7 925 123 45 67</p>
+        </li>
+        <li><img src="src/images/social-icon-telegram-1.png" alt="Telegram" class="social-icon social-icon_place_header">
+        </li>
+        <li><img src="src/images/social-icon-vk-1.png" alt="VK" class="social-icon social-icon_place_header"></li>
+        <li><img src="src/images/social-icon-whatsapp-1.png" alt="WhatsApp" class="social-icon social-icon_place_header">
+        </li>
+      </ul>
+    </header>
+    <main class="main">
+      <section class="welcome">
+        <div class="welcome__overlay">
+          <h1 class="welcome__title">Вперёд за впечатлениями</h1>
+          <p class="welcome__subtitle">очаруйтесь красотой России вместе с туристским клубом RiseUp</p>
+          <button class="welcome__button">Поехали!</button>
+          <div class="welcome__arrow-cover">
+            <img src="src/images/arrow.png" alt="" class="welcome__arrow">
+          </div>
+        </div>
+      </section>
+      <section class="about">
+        <div class="section-wrapper">
+          <h2 class="about__title">Каким будет моё путешествие? </h2>
+          <p class="about__paragraph">Лучше один раз увидеть, чем сто раз услышать! <br> Взгляните на фото, которые мы
+            привезли из туров по всей России </p>
+          <div class="about__photos">
+            <div class="about__photos-wrapper">
+              <div class="about__photos-loader"></div>
+              <img class="about__photos-loader-icon" src="src/images/loader.svg" alt="">
+              <div class="about__first-container"></div>
+              <div class="about__second-container"></div>
+              <button class="about__switcher about__switcher_type_left about__switcher_desktop transparent"></button>
+              <button class="about__switcher about__switcher_type_right about__switcher_desktop transparent"></button>
+            </div>
+            <ul class="about__bullet-wrapper transparent">
+            </ul>
+            <div class="about__switchers-wrapper">
+              <button class="about__switcher about__switcher_type_left about__switcher_mobile transparent"></button>
+              <p class="about__counter">
+                <span id="js-about-chosen"></span>/<span id="js-about-all"></span>
+              </p>
+              <button class="about__switcher about__switcher_type_right about__switcher_mobile transparent"></button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="tours">
+        <div class="section-wrapper">
+          <h2 class="tours__title">Наши туры</h2>
+          <p class="tours__subtitle">Мы организуем путешествия по всей России, у нас есть предложения как для опытных
+            туристов, так и для начинающих</p>
+          <div class="tours__cards"></div>
+        </div>
+      </section>
+      <section class="team">
+        <div class="team__grid">
+          <h2 class="team__title">Команда</h2>
+          <div class="team__about-wrapper">
+            <p class="team__about">наша команда самая весёлая, умная и обаятельная</p>
+            <p class="team__about"> все инструктора клуба <span class="team__about text-colorful">получили государственные сертификаты</span> </p>
+            <p class="team__about"> мы гарантируем вам комфортный, насыщенный и безопасный отдых </p>
+          </div>
+
+
+        </div>
+      </section>
+      <section class="feedback">
+        <div class="section-wrapper section-wrapper_place_feedback">
+          <div class="feedback__text-wrapper feedback__text-wrapper_type_first">
+            <p class="feedback__text">наши гости — </p>
+            <p class="feedback__text"><span class="feedback__text text-colorful">самые лучшие</span></p>
+            <p class="feedback__text">уже <span id="js-number-of-tourists"
+                class="feedback__text feedback__text-number text-colorful">2357</span> человек доверили нам свой отдых
+            </p>
+          </div>
+          <div class="feedback__wrapper">
+            <div class="feedback__card-wrapper">
+              <div class="feedback__first-container"></div>
+              <div class="feedback__second-container"></div>
+            </div>
+            <div class="feedback__switchers-wrapper">
+              <button class="feedback__switcher feedback__switcher_type_left"></button>
+              <ul class="feedback__bullet-wrapper"></ul>
+              <button class="feedback__switcher feedback__switcher_type_right"></button>
+            </div>
+          </div>
+          <div class="feedback__text-wrapper feedback__text-wrapper_type_second">
+            <p class="feedback__text">мы попросили их поделиться своими <span
+                class="feedback__text text-colorful">впечатлениями,</span></p>
+            <p class="feedback__text">взгляните, что они пишут</p>
+          </div>
+        </div>
+      </section>
+      <section class="faq">
+        <div class="section-wrapper">
+          <p class="faq__title">FAQ</p>
+          <p class="faq__subtitle">есть вопросы? <span class="faq__subtitle text-colorful">FAQ вам поможет!</span></p>
+          <div class="faq__cards"></div>
+        </div>
+      </section>
+      <section class="lead">
+        <div class="section-wrapper">
+          <h2 class="lead__title">Свяжитесь с нами и мы подробно ответим на все интересующие вас вопросы и поможем определиться с туром</h2>
+          <ul class="lead__social">
+            <li class="lead__social-item"><img src="src/images/social-icon-telegram-2.png" alt="Telegram"
+                class="social-icon social-icon_place_lead-form"></li>
+            <li class="lead__social-item"><img src="src/images/social-icon-vk-2.png" alt="VK"
+                class="social-icon social-icon_place_lead-form"></li>
+            <li class="lead__social-item"><img src="src/images/social-icon-whatsapp-2.png" alt="WhatsApp"
+                class="social-icon social-icon_place_lead-form"></li>
+          </ul>
+          <p class="lead__subtitle">... или оставьте свои контакты и мы позвоним вам в удобное время</p>
+          <form action="#" method="post" class="lead-form" name="lead-form">
+            <h3 class="lead-form__title">Забронировать тур</h3>
+            <div class="lead-form__row-wrapper">
+              <div class="lead-form__row">
+                <label class="lead-form__label" for="name">Имя</label>
+                <input class="lead-form__text-input" type="text" name="name" id="name">
+              </div>
+              <div class="lead-form__row">
+                <label class="lead-form__label" for="phone">Телефон</label>
+                <input class="lead-form__text-input" type="tel" name="phone" id="phone">
+              </div>
+              <div class="lead-form__row">
+                <label class="lead-form__label" for="email">Email</label>
+                <input class="lead-form__text-input" type="email" name="email" id="email">
+              </div>
+            </div>
+
+            <label class="lead-form__call-time-label" for="call-time">удобное время для звонка</label>
+            <div class="lead-form__time-wrapper">
+              <select class="lead-form__call-day" name="day" id="call-time">
+                <option value=""></option>
+                <option value=""></option>
+                <option value=""></option>
+                <option value=""></option>
+                <option value=""></option>
+                <option value=""></option>
+                <option value=""></option>
+              </select>
+              <input class="lead-form__call-time" type="time" name="time" id="call-time" value="12:00">
+              </input>
+            </div>
+            <button class="lead-form__submit-button">Хочу в путешествие!</button>
+
+          </form>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <p class="footer__author">La Viro, 2023 год</p>
+      <p class="footer__text">ВСЯ ИНФОРМАЦИЯ, ПРЕДСТАВЛЕННАЯ НА САЙТЕ, НОСИТ ФИЛЛЕРНО-ЮМОРИСТИЧЕСКИЙ ХАРАКТЕР, Т. Н. ХИХАНЬКИ (ХАХАНЬКИ)</p>
+      <nav class="footer__nav">
+        <a href="" class="footer__nav-link">GitHub</a>
+        <a href="" class="footer__nav-link">Telegram</a>
+      </nav>
+    </footer>
+  </div>
+
+  <template id="about-photo-card">
+    <img class="about__photo-card" src="" alt="">
+  </template>
+
+  <template id="tour-card">
+    <div class="tour-card">
+      <div class="tour-card__wrapper">
+        <h3 class="tour-card__title"></h3>
+        <p class="tour-card__duration"></p>
+        <p class="tour-card__about"></p>
+      </div>
+    </div>
+  </template>
+
+  <template id="carousel-bullet-template">
+    <li id="bullet-li"><button id="bullet-button"></button></li>
+  </template>
+
+  <template id="about-photo-card">
+    <img class="about__photo-card" src="" alt="">
+  </template>
+
+  <template id="feedback-card">
+    <div class="feedback__card">
+      <img class="feedback__card-photo" src="" alt="">
+      <p class="feedback__card-author-name"></p>
+      <p class="feedback__card-author-job"></p>
+      <p class="feedback__card-text"></p>
+    </div>
+  </template>
+
+  <template id="faq-card">
+    <div class="faq-card">
+      <div class="faq-card__wrapper">
+        <img class="faq-card__icon" src="src/images/faq-icon.svg" alt="">
+        <p class="faq-card__title"></p>
+        <button class="faq-card__button" type="button"></button>
+      </div>
+      <p class="faq-card__text"></p>
+    </div>
+  </template>
+
+  <template id="team-card">
+    <div class="team-card">
+      <div class="team-card__wrapper">
+        <img class="team-card__photo" src="" alt="">
+        <p class="team-card__name"></p>
+      </div>
+
+      <p class="team-card__about"></p>
+      <p class="team-card__text"></p>
+    </div>
+  </template>
+
+
+  <script src="src/pages/index.js" type="module"></script>
+</body>

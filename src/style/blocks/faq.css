@@ -1,0 +1,170 @@
+.faq {
+  padding: 80px 0 120px;
+  background-color: rgba(0, 0, 0, .5);
+  background-image: url(../../images/faq-background-image.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: overlay;
+  color: #fff;
+}
+
+@media (max-width: 1600px) {
+  .faq  {
+    padding: 80px 50px 120px;
+  }
+}
+
+@media (max-width: 1280px) {
+  .faq  {
+    padding: 60px 40px 100px;
+  }
+}
+
+.faq__title {
+  margin: 0;
+  font-size: 65px;
+  font-weight: 600;
+  line-height: 1.19;
+}
+
+@media (max-width: 1600px) {
+  .faq__title  {
+    font-size: 60px;
+  }
+}
+
+@media (max-width: 1280px) {
+  .faq__title  {
+    font-size: 50px;
+  }
+}
+
+.faq__subtitle {
+  margin: 0;
+  font-size: 28px;
+  font-weight: 300;
+  line-height: 1.5;
+  margin-bottom: 60px;
+}
+
+@media (max-width: 1600px) {
+  .faq__subtitle  {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 1280px) {
+  .faq__subtitle  {
+    font-size: 22px;
+    margin-bottom: 50px;
+  }
+}
+
+.faq__cards {
+  margin: 0;
+  font-weight: 300;
+  line-height: 1.5;
+}
+
+.faq-card__wrapper {
+  margin: 0 auto;
+  width: 100%;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@media (max-width: 1600px) {
+  .faq-card__wrapper  {
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+  }
+}
+
+.faq-card__title {
+  margin: 0;
+  flex-grow: 1;
+  font-size: 26px;
+  font-weight: 400;
+}
+
+@media (max-width: 1600px) {
+  .faq-card__title  {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 1280px) {
+  .faq-card__title  {
+    font-size: 20px;
+  }
+}
+
+.faq-card__icon {
+  display: block;
+  margin-right: 20px;
+  width: 50px;
+  height: 50px;
+  opacity: .5;
+}
+
+@media (max-width: 1280px) {
+  .faq-card__icon  {
+    width: 35px;
+    height: 35px;
+    margin-right: 7px;
+  }
+}
+
+.faq-card__button {
+  padding: 0;
+  width: 35px;
+  height: 35px;
+  background-color: transparent;
+  background-image: url(../../images/faq-button.svg);
+  border: 0;
+  background-size: cover;
+  transition: all .3s;
+}
+
+@media (max-width: 1280px) {
+  .faq-card__button {
+    margin-left: 15px;
+    width: 30px;
+    height: 30px;
+  }
+}
+
+.faq-card__text {
+  margin: 0;
+  margin-bottom: 35px;
+  height: 0;
+  overflow: hidden;
+  font-size: 22px;
+  line-height: 1.21;
+  transition: all .3s;
+  transform: scaleY(0);
+  transform-origin: 0 0;
+}
+
+@media (max-width: 1600px) {
+  .faq-card__text {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 1280px) {
+  .faq-card__text {
+    padding-left: 20px;
+    font-size: 18px;
+    max-width: 80%;
+  }
+}
+
+.faq__text_active {
+  transform: scaleY(1);
+  transform-origin: left;
+}

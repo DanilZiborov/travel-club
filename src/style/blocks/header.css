@@ -1,0 +1,147 @@
+.header {
+  box-sizing: border-box;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100px;
+  background-color: rgb(51, 51, 51, .5);
+  transition: all 1s;
+}
+
+  @media (max-width: 1600px) {
+    .header {
+      padding: 0 50px;
+    }
+  }
+
+  @media (max-width: 1280px) {
+    .header {
+      padding: 0 30px;
+      justify-content: space-between;
+      height: 80px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .header {
+      justify-content: space-between;
+      height: 70px;
+    }
+  }
+
+
+.header__navbar {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+  .header__navbar {
+    display: none;
+  }
+}
+
+.header__navlink {
+  flex-shrink: 0;
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  font-size: 20px;
+  font-weight: 700;
+  margin-right: 50px;
+}
+
+@media (max-width: 1600px) {
+  .header__navlink {
+    font-size: 18px;
+    margin-right: 35px;
+  }
+}
+
+@media (max-width: 1280px) {
+  .header__navlink {
+    font-size: 16px;
+    margin-right: 28px;
+  }
+}
+
+.header__navlink:last-child {
+  margin-right: 0;
+}
+
+.header__social {
+  position: absolute;
+  right: 40px;
+  margin: 0;
+  padding: 0;
+  min-width: 300px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  list-style: none;
+
+}
+
+@media (max-width: 1600px) {
+  .header__social {
+    min-width: 230px;
+  }
+}
+
+@media (max-width: 1280px) {
+  .header__social {
+    min-width: auto;
+    position: static;
+    justify-content: flex-end;
+    font-weight: 600;
+    font-size: 18px;
+    color: #ffb667;
+  }
+}
+
+@media (max-width: 768px) {
+  .header__social {
+    min-width: auto;
+    position: static;
+    justify-content: center;
+    font-weight: 600;
+    font-size: 18px;
+    color: #ffb667;
+  }
+}
+
+.header__number {
+  font-size: 16px;
+  margin: 0;
+  color: #fff;
+}
+
+@media (max-width: 1600px) {
+  .header__number {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 1280px) {
+  .header__number {
+    font-size: 14px;
+    color: #ffb667;
+  }
+}
+
+@media (max-width: 768px) {
+  .header__number {
+    margin-right: 15px;
+    font-size: 14px;
+    color: #ffb667;
+  }
+}
+
+
+

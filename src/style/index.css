@@ -1,0 +1,35 @@
+/* Нормализация стилей */
+
+@import url(../vendor/normalize.css);
+
+
+/* Шрифты */
+
+@import url(../vendor/fonts/font.css);
+
+/* Импортируем стили блоков-секций */
+
+@import url(./blocks/root.css);
+@import url(./blocks/header.css);
+@import url(./blocks/welcome.css);
+@import url(./blocks/about.css);
+@import url(./blocks/tours.css);
+@import url(./blocks/feedback.css);
+@import url(./blocks/team.css);
+@import url(./blocks/faq.css);
+@import url(./blocks/lead.css);
+@import url(./blocks/footer.css);
+
+/* Анимации, общие и вспомогательные блоки */
+
+@import url(./animations/animations.css);
+@import url(./common-blocks/common-blocks.css);
+
+
+
+
+
+
+
+
+

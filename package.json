@@ -1,0 +1,25 @@
+{
+  "name": "turclub",
+  "version": "0.0.1",
+  "description": "",
+  "main": "script.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DanilZiborov/turclub.git"
+  },
+  "author": "Danil Ziborov",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DanilZiborov/turclub/issues"
+  },
+  "homepage": "https://github.com/DanilZiborov/turclub#readme",
+  "devDependencies": {
+    "jest": "^29.6.2"
+  },
+  "dependencies": {
+    "git-filter-repo": "^0.0.30"
+  }
+}

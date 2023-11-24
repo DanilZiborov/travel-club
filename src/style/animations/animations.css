@@ -1,0 +1,128 @@
+@keyframes text-pop-up {
+  from {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+
+
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes up-and-down {
+  from {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(20px);
+  }
+
+  to {
+    transform: translateY(0);
+  }
+
+}
+
+@keyframes pop-card {
+  from {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.03);
+  }
+
+  to {
+    transform: scale(1);
+  }
+
+}
+
+/* Анимации текста */
+
+@keyframes left-right {
+  from {
+    transform: scaleX(0);
+    transform-origin: left;
+  }
+
+
+  to {
+    transform: scaleX(1);
+  }
+
+}
+
+@keyframes top-bottom {
+  from {
+    transform: scaleY(0);
+    transform-origin: top;
+  }
+
+
+  to {
+    transform: scaleY(1);
+  }
+
+}
+
+@keyframes scale-text {
+  from {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.5);
+  }
+
+  to {
+    transform: scale(1);
+  }
+
+}
+
+@keyframes popup-and-move {
+  from {
+    transform: scale(1) translateX(-10%);
+    opacity: 0;
+  }
+
+  to {
+    transform: scale(1) translateX(0);
+    opacity: 1;
+  }
+
+}
+
+.animated {
+  visibility: visible;
+  animation-name: text-pop-up;
+  animation-duration: 1s;
+  animation-timing-function: cubic-bezier(.19, 1, .22, 1);
+}
+
+/* Классы анимаций */
+
+.animation_type_left-right {
+  animation: left-right .8s ease-in-out forwards;
+}
+
+.animation_type_top-bottom {
+  animation: top-bottom .5s ease-in forwards;
+}
+
+.animation_type_scale-text {
+  animation: scale-text .6s ease-out;
+  animation-delay: .8s;
+}
+
+.animation_type_popup-and-move {
+  animation: popup-and-move .8s ease-out forwards;
+}
+
+
+
+
